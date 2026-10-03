@@ -4,41 +4,50 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Noxveil — The Veil Between Sin and Sorrow</title>
-  <meta name="description" content="A dark-fantasy character portfolio for Noxveil — The Veil Between Sin and Sorrow." />
+  <meta name="description" content="Enter Noxveil's domain — a dark-fantasy character showcase revealing secrets, powers, and whispered monologues from the Veil." />
   <meta name="theme-color" content="#0a0a0f" />
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Noxveil — The Veil Between Sin and Sorrow" />
-  <meta property="og:description" content="Dark, smoky, cinematic character portfolio for Noxveil." />
+  <meta property="og:description" content="Enter Noxveil's domain — a dark-fantasy character showcase revealing secrets, powers, and whispered monologues from the Veil." />
   <meta property="og:type" content="website" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Noxveil — The Veil Between Sin and Sorrow" />
-  <meta property="twitter:description" content="Dark, smoky, cinematic character portfolio for Noxveil." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <meta property="og:image" content="assets/images/screenshot.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Noxveil — The Veil Between Sin and Sorrow" />
+  <meta name="twitter:description" content="Enter Noxveil's domain — a dark-fantasy character showcase." />
+  <meta name="twitter:image" content="assets/images/screenshot.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cormorant+Garamond:ital,wght@1,400;1,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="prefers-motion-safe">
+  <!-- top scroll progress -->
   <div id="scroll-progress" aria-hidden="true"></div>
 
   <header class="site-header" role="banner">
     <div class="header-inner">
-      <a class="brand" href="#hero" aria-label="Noxveil home">
+      <a class="brand" href="#hero" aria-label="Home">
+        <!-- inline small sigil -->
         <svg class="brand-sigil" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true" focusable="false">
-          <circle cx="32" cy="32" r="28" fill="none" stroke="var(--color-ash)" stroke-width="2"></circle>
-          <path d="M12 35c12-18 40-18 40 0" stroke="var(--color-ember)" stroke-width="2.8" fill="none" stroke-linecap="round"></path>
-          <circle cx="32" cy="27" r="6" fill="var(--color-ember-glow)"></circle>
+          <circle cx="32" cy="32" r="30" stroke="var(--color-ash)" stroke-width="2" fill="none" />
+          <path d="M12 34c10-18 40-18 40 0" stroke="var(--color-ember)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <circle cx="32" cy="28" r="6" fill="var(--color-ember-glow)" opacity="0.9" />
         </svg>
         <span class="brand-text">NOXVEIL</span>
       </a>
 
-      <nav class="primary-nav" aria-label="Primary navigation">
+      <nav aria-label="Primary" class="primary-nav">
         <ul>
           <li><a href="#lore">Lore</a></li>
           <li><a href="#traits">Traits</a></li>
@@ -48,51 +57,57 @@
           <li><a href="#ritual">Ritual</a></li>
         </ul>
       </nav>
-
-      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <main id="main" role="main">
-    <section id="hero" class="hero-section" aria-label="Hero section">
+    <section id="hero" class="hero-section" aria-label="Hero">
+      <!-- particles canvas behind -->
       <canvas id="particles-canvas" class="particles-canvas" aria-hidden="true"></canvas>
 
       <div class="hero-inner">
-        <div class="hero-copy">
-          <h1 id="hero-title" class="hero-title" aria-label="Noxveil">
+        <div class="hero-copy" role="region" aria-labelledby="hero-title">
+          <h1 id="hero-title" class="hero-title" aria-label="NOXVEIL">
+            <!-- Each char wrapped for staggered reveal -->
             <span>N</span><span>O</span><span>X</span><span>V</span><span>E</span><span>I</span><span>L</span>
           </h1>
           <p class="hero-tagline" id="hero-tagline">The Veil Between Sin and Sorrow</p>
-          <p class="hero-sub" id="hero-sub">“I did not come to destroy you. I came to see how long you last.”</p>
+          <p class="hero-sub" id="hero-sub">"I did not come to destroy you. I came to see how long you last."</p>
           <div class="hero-cta">
             <a class="btn btn-ghost" href="#lore">Enter the Veil</a>
             <a class="btn btn-outline" href="#whispers">Hear Whispers</a>
           </div>
         </div>
 
-        <aside class="hero-portrait" aria-label="Noxveil portrait">
-          <div class="portrait-frame">
-            <!-- REPLACE: hero-portrait.jpg (3:4 ratio, recommended 1200x1600px) -->
-            <img src="assets/images/hero-portrait.jpg" alt="Noxveil — full body portrait" loading="lazy" decoding="async" />
-            <div class="portrait-smoke" aria-hidden="true"></div>
+        <aside class="hero-portrait" aria-hidden="false">
+          <!-- REPLACE with real art -->
+          <div class="portrait-frame" role="img" aria-label="Noxveil portrait" data-alt="Noxveil — full body portrait">
+            <!-- CDN placeholder used until replaced locally -->
+            <img src="https://placehold.co/1200x1600/1a0b2e/8b1e1e?text=Noxveil%0AHero+Portrait" alt="Noxveil — full body portrait" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.setAttribute('data-alt', this.alt);this.style.display='none';this.parentElement.classList.add('img-failed');">
+
+            <!-- corner ornaments -->
+            <svg class="corner corner-tl" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8 C8 4, 16 4, 20 8" stroke="rgba(214,207,196,0.06)" stroke-width="1.6" fill="none"/></svg>
+            <svg class="corner corner-tr" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8 C16 4, 8 4, 4 8" stroke="rgba(214,207,196,0.06)" stroke-width="1.6" fill="none"/></svg>
+            <svg class="corner corner-bl" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16 C8 20, 16 20, 20 16" stroke="rgba(214,207,196,0.06)" stroke-width="1.6" fill="none"/></svg>
+            <svg class="corner corner-br" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 16 C16 20, 8 20, 4 16" stroke="rgba(214,207,196,0.06)" stroke-width="1.6" fill="none"/></svg>
           </div>
         </aside>
       </div>
 
       <div class="scroll-cue" aria-hidden="true">
         <span>Scroll</span>
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
     </section>
 
     <section id="lore" class="section section-reveal" aria-labelledby="lore-title">
       <div class="container">
         <h2 id="lore-title">Origin</h2>
-        <p id="lore-text" class="lede">Born from the first lie humanity ever told itself, Noxveil drifts at the seam where falsehood hardens into myth.</p>
-        <blockquote class="pull-quote" aria-label="Noxveil quote">
-          <em id="lore-quote">“Humans hate me because they see themselves in my eyes.”</em>
+        <p class="lede" id="lore-text">Born from the first lie humanity ever told itself, Noxveil drifts at the seam where falsehood hardens into myth. He watches with ember-eyes; he catalogues the flimsy courage of mankind like a naturalist catalogues fragile insects.</p>
+
+        <blockquote class="pull-quote" aria-label="Pull quote">
+          <em id="lore-quote">"Humans hate me because they see themselves in my eyes."</em>
         </blockquote>
       </div>
     </section>
@@ -100,23 +115,31 @@
     <section id="traits" class="section section-reveal" aria-labelledby="traits-title">
       <div class="container">
         <h2 id="traits-title">Traits</h2>
-        <div id="traits-grid" class="grid traits-grid" aria-live="polite"></div>
+        <div id="traits-grid" class="grid traits-grid" aria-live="polite">
+          <!-- JS will inject trait cards from data/content.json -->
+        </div>
       </div>
     </section>
 
     <section id="powers" class="section section-reveal" aria-labelledby="powers-title">
       <div class="container">
         <h2 id="powers-title">Powers</h2>
-        <div id="powers-grid" class="grid powers-grid"></div>
+        <div id="powers-grid" class="grid powers-grid">
+          <!-- JS will inject powers -->
+        </div>
       </div>
     </section>
 
     <section id="whispers" class="section section-reveal" aria-labelledby="whispers-title">
       <div class="container">
         <h2 id="whispers-title">Whispers</h2>
-        <div class="quotes-wrap">
-          <div id="quotes" class="quotes" aria-live="polite"></div>
-          <div class="quotes-controls" id="quotes-controls" role="tablist" aria-label="Monologue navigation"></div>
+        <div class="quotes-wrap" id="quotes-wrap" aria-live="polite">
+          <div id="quotes" class="quotes">
+            <!-- JS injects quotes -->
+          </div>
+          <div class="quotes-controls" id="quotes-controls" role="tablist" aria-label="Whisper navigation">
+            <!-- dots -->
+          </div>
         </div>
       </div>
     </section>
@@ -124,40 +147,40 @@
     <section id="gallery" class="section section-reveal" aria-labelledby="gallery-title">
       <div class="container">
         <h2 id="gallery-title">Gallery</h2>
-        <div class="gallery-grid">
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- REPLACE with real art -->
           <figure class="gallery-item">
-            <!-- REPLACE: placeholder-01.jpg — close-up of eyes -->
-            <img src="assets/images/placeholder-01.jpg" alt="Close-up of Noxveil's ember eyes, glowing through ash" loading="lazy" decoding="async" />
+            <img src="https://placehold.co/800x800/0a0a0f/c2410c?text=Gallery+01" alt="Close-up of Noxveil's ember eyes, glow through ash" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.setAttribute('data-alt', this.alt);this.style.display='none';this.parentElement.classList.add('img-failed');">
             <figcaption>Close-up of ember eyes</figcaption>
           </figure>
 
+          <!-- REPLACE with real art -->
           <figure class="gallery-item">
-            <!-- REPLACE: placeholder-02.jpg — silhouette against burning city -->
-            <img src="assets/images/placeholder-02.jpg" alt="Noxveil's silhouette against a burning city skyline" loading="lazy" decoding="async" />
+            <img src="https://placehold.co/800x800/0a0a0f/c2410c?text=Gallery+02" alt="Silhouette against a burning city skyline" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.setAttribute('data-alt', this.alt);this.style.display='none';this.parentElement.classList.add('img-failed');">
             <figcaption>Silhouette against burning city</figcaption>
           </figure>
 
+          <!-- REPLACE with real art -->
           <figure class="gallery-item">
-            <!-- REPLACE: placeholder-03.jpg — hand reaching through smoke -->
-            <img src="assets/images/placeholder-03.jpg" alt="A hand reaching through smoke" loading="lazy" decoding="async" />
+            <img src="https://placehold.co/800x800/0a0a0f/c2410c?text=Gallery+03" alt="A hand reaching through curling smoke" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.setAttribute('data-alt', this.alt);this.style.display='none';this.parentElement.classList.add('img-failed');">
             <figcaption>Hand reaching through smoke</figcaption>
           </figure>
 
+          <!-- REPLACE with real art -->
           <figure class="gallery-item">
-            <!-- REPLACE: placeholder-04.jpg — chained wrist close-up -->
-            <img src="assets/images/placeholder-04.jpg" alt="Close-up of a thin chain on Noxveil's left wrist" loading="lazy" decoding="async" />
+            <img src="https://placehold.co/800x800/0a0a0f/c2410c?text=Gallery+04" alt="Close-up of the thin chain on his left wrist" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.setAttribute('data-alt', this.alt);this.style.display='none';this.parentElement.classList.add('img-failed');">
             <figcaption>Bound by choice — the chain</figcaption>
           </figure>
 
+          <!-- REPLACE with real art -->
           <figure class="gallery-item">
-            <!-- REPLACE: placeholder-05.jpg — robe dissolving into smoke -->
-            <img src="assets/images/placeholder-05.jpg" alt="Tattered robe dissolving into smoke" loading="lazy" decoding="async" />
+            <img src="https://placehold.co/800x800/0a0a0f/c2410c?text=Gallery+05" alt="Tattered robe that bleeds into smoke at the edges" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.setAttribute('data-alt', this.alt);this.style.display='none';this.parentElement.classList.add('img-failed');">
             <figcaption>Robe dissolving into smoke</figcaption>
           </figure>
 
+          <!-- REPLACE with real art -->
           <figure class="gallery-item">
-            <!-- REPLACE: placeholder-06.jpg — profile with horns -->
-            <img src="assets/images/placeholder-06.jpg" alt="Portrait showing backward curving black horns" loading="lazy" decoding="async" />
+            <img src="https://placehold.co/800x800/0a0a0f/c2410c?text=Gallery+06" alt="Portrait showing backward-curving black horns" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.setAttribute('data-alt', this.alt);this.style.display='none';this.parentElement.classList.add('img-failed');">
             <figcaption>Horns — the shadow crown</figcaption>
           </figure>
         </div>
@@ -167,14 +190,14 @@
     <section id="ritual" class="section section-reveal" aria-labelledby="ritual-title">
       <div class="container">
         <h2 id="ritual-title">Ritual</h2>
-        <p class="ritual-lede">Call through the Veil. Leave your true name and your offering. This is a dramatic front-end summoning — no backend, only a theatrical response.</p>
+        <p class="ritual-lede">Call through the Veil. Leave your true name, and offer whatever confession you bear. This is a front-end summoning — responses are theatrically generated.</p>
 
-        <form id="summoning-form" class="summoning-form" aria-label="Summoning ritual form">
+        <form id="summoning-form" class="summoning-form" aria-label="Summoning form">
           <label for="true-name">True Name</label>
-          <input id="true-name" name="name" type="text" placeholder="Your True Name" required />
+          <input id="true-name" name="name" type="text" placeholder="Your True Name" required>
 
           <label for="offering">Offering</label>
-          <textarea id="offering" name="message" rows="6" placeholder="Your offering, your confession..." required></textarea>
+          <textarea id="offering" name="message" placeholder="Your offering, your secret..." rows="6" required></textarea>
 
           <button id="submit-btn" class="btn btn-primary" type="submit">Send Through the Veil</button>
           <div id="form-response" class="form-response" role="status" aria-live="polite"></div>
@@ -185,208 +208,39 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <div class="footer-sigil" aria-hidden="true">
-        <svg viewBox="0 0 64 64" width="44" height="44">
-          <circle cx="32" cy="32" r="28" fill="none" stroke="var(--color-ash)" stroke-width="2"></circle>
-          <path d="M12 35c12-18 40-18 40 0" stroke="var(--color-ember)" stroke-width="2.8" fill="none" stroke-linecap="round"></path>
-          <circle cx="32" cy="27" r="6" fill="var(--color-ember-glow)"></circle>
+      <div class="footer-sigil">
+        <!-- large sigil -->
+        <svg viewBox="0 0 64 64" width="44" height="44" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" stroke="var(--color-ash)" stroke-width="2" fill="none" />
+          <path d="M12 34c10-18 40-18 40 0" stroke="var(--color-ember)" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+          <circle cx="32" cy="28" r="6" fill="var(--color-ember-glow)" />
         </svg>
       </div>
-
       <div class="footer-copy">
         <small>© <span id="year"></span> Noxveil — The Veil Between Sin and Sorrow</small>
         <p class="closing-line">I will be waiting on the other side of the veil.</p>
       </div>
-
-      <nav class="footer-links" aria-label="Footer links">
+      <nav class="footer-links" aria-label="Footer">
         <a href="#hero">Back to top</a>
         <a href="#ritual">Summon</a>
       </nav>
     </div>
   </footer>
 
+  <!-- Custom cursor element -->
   <div id="custom-cursor" aria-hidden="true">
-    <svg viewBox="0 0 64 64" width="48" height="48" class="cursor-sigil">
-      <circle cx="32" cy="32" r="28" stroke="rgba(214,207,196,0.15)" stroke-width="1.4" fill="none"></circle>
-      <path d="M16 36c10-16 32-16 32 0" stroke="var(--color-ember)" stroke-width="1.8" fill="none" stroke-linecap="round"></path>
-      <circle cx="32" cy="27" r="5" fill="var(--color-ember-glow)" opacity="0.95"></circle>
+    <!-- Inline sigil -->
+    <svg viewBox="0 0 64 64" width="48" height="48" class="cursor-sigil" aria-hidden="true">
+      <circle cx="32" cy="32" r="28" stroke="rgba(214,207,196,0.08)" stroke-width="1.4" fill="none" />
+      <path d="M20 36c8-14 24-14 32 0" stroke="var(--color-ember)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <circle cx="32" cy="28" r="5" fill="var(--color-ember-glow)" opacity="0.95" />
     </svg>
   </div>
 
   <script src="js/particles.js" defer></script>
+  <script src="js/scrollReveal.js" defer></script>
   <script src="js/cursor.js" defer></script>
   <script src="js/quotes.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
