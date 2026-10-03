@@ -1,0 +1,27 @@
+:root {
+  --color-void: #0a0a0f;
+  --color-abyss: #12101a;
+  --color-purple-deep: #1a0b2e;
+  --color-ember: #8b1e1e;
+  --color-ember-glow: #c2410c;
+  --color-ash: #2a2a35;
+  --color-bone: #d6cfc4;
+  --color-gold-dull: #a16207;
+  --color-text: #e6e1d8;
+  --color-text-muted: #8a8391;
+
+  --font-heading: "Cinzel", serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-quote: "Cormorant Garamond", Georgia, serif;
+
+  --max-width: 1200px;
+  --content-pad: 24px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --title-stagger: 80ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --title-stagger: 0ms;
+  }
+}

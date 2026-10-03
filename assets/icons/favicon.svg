@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Noxveil sigil">
+  <defs>
+    <radialGradient id="emberGlow" cx="30%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#c2410c" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#8b1e1e" stop-opacity="0.75"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="#0a0a0f"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#2a2a35" stroke-width="2.5"/>
+  <path d="M12 35c10-18 40-18 40 0" stroke="url(#emberGlow)" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <circle cx="32" cy="27" r="6" fill="url(#emberGlow)"/>
+</svg>

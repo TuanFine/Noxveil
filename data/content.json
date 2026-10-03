@@ -1,0 +1,34 @@
+{
+  "site": {
+    "tagline": "The Veil Between Sin and Sorrow",
+    "heroQuote": "I did not come to destroy you. I came to see how long you last."
+  },
+  "lore": {
+    "lede": "Born from the first lie humanity ever told itself, Noxveil drifts at the seam where falsehood hardens into myth. He studies the fragile, stubborn, hopeful creature called man with a fascination that feels almost tender.",
+    "pullQuote": "Humans hate me because they see themselves in my eyes."
+  },
+  "traits": [
+    { "name": "Manipulative", "desc": "He arranges truths like bones, knowing precisely where they will crack." },
+    { "name": "Patient", "desc": "Centuries are but minutes to a being built on waiting." },
+    { "name": "Observant", "desc": "Every twitch of fear, grief, and delight is recorded in the ash." },
+    { "name": "Cynical", "desc": "He knows hope is beautiful because it is so easily broken." },
+    { "name": "Fascinated by Humans", "desc": "Their contradictions are both a wound and a mirror he cannot look away from." },
+    { "name": "Eternally Lonely", "desc": "Even power cannot warm the silence that follows him." }
+  ],
+  "powers": [
+    { "name": "Veilwalk", "desc": "Slip through the folds between waking and dreaming, revealing the hidden shape behind a lie." },
+    { "name": "Whisper of Truth", "desc": "A single phrase can split a secret open, or force a wound into honesty." },
+    { "name": "Ashbind", "desc": "Bind memory to ash until the soul offers the truth willingly." },
+    { "name": "Empathic Echo", "desc": "He hears the ache beneath your words and returns it with a sharper edge." }
+  ],
+  "whispers": [
+    "I learned to count silence by the number of confessions left unspoken.",
+    "Do you know the sound a lie makes when it is pulled loose from the throat? It is ugly, and honest.",
+    "You call me cruel. I call it observation. There is a difference, though many miss it.",
+    "Hope is a beautiful wound. It burns most when it is sincere.",
+    "I do not want to destroy you. I want to know how long your heart survives the truth."
+  ],
+  "form": {
+    "success": "Your offering is accepted. I will keep it warm between the folds of the Veil."
+  }
+}
